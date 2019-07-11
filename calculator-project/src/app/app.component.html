@@ -2,10 +2,20 @@
    <div class="mainDisplay">{{ resultText }}</div>
    <div class="subDisplay">{{ operationText }}</div>
    <div class="keypad">
-   <div class="buttonRow"><span class="buttonSpan" (click)="pressKey('7')">7</span><span class="buttonSpan" (click)="pressKey('8')">8</span><span class="buttonSpan" (click)="pressKey('9')">9</span><span class="buttonSpan" (click)="pressKey('/')">/</span></div>
-   <div class="buttonRow"><span class="buttonSpan" (click)="pressKey('4')">4</span><span class="buttonSpan" (click)="pressKey('5')">5</span><span class="buttonSpan" (click)="pressKey('6')">6</span><span class="buttonSpan" (click)="pressKey('*')">*</span></div>
-   <div class="buttonRow"><span class="buttonSpan" (click)="pressKey('1')">1</span><span class="buttonSpan" (click)="pressKey('2')">2</span><span class="buttonSpan" (click)="pressKey('3')">3</span><span class="buttonSpan" (click)="pressKey('-')">-</span></div>
-   <div class="buttonRow"><span class="buttonSpan" (click)="pressKey('C')">C</span><span class="buttonSpan" (click)="pressKey('0')">0</span><span class="buttonSpan" (click)="pressKey('.')">.</span><span class="buttonSpan" (click)="pressKey('+')">+</span></div>
-   <div class="buttonRow"><span class="buttonSpan operator"(click)="pressKey('=')" >=</span></div>
-</div>
+      <div class="buttonRow"><span class="buttonSpan" (click)="pressKey('7')">7</span><span class="buttonSpan"
+            (click)="pressKey('8')">8</span><span class="buttonSpan" (click)="pressKey('9')">9</span><span
+            class="buttonSpan" (click)="pressKey('/')">/</span></div>
+      <div class="buttonRow"><span class="buttonSpan" (click)="pressKey('4')">4</span><span class="buttonSpan"
+            (click)="pressKey('5')">5</span><span class="buttonSpan" (click)="pressKey('6')">6</span><span
+            class="buttonSpan" (click)="pressKey('*')">*</span></div>
+      <div class="buttonRow"><span class="buttonSpan" (click)="pressKey('1')">1</span><span class="buttonSpan"
+            (click)="pressKey('2')">2</span><span class="buttonSpan" (click)="pressKey('3')">3</span><span
+            class="buttonSpan" (click)="pressKey('-')">-</span></div>
+      <div class="buttonRow"><span class="buttonSpan" (click)="pressKey('C')">C</span><span class="buttonSpan"
+            (click)="pressKey('0')">0</span><span class="buttonSpan" (click)="pressKey('.')">.</span><span
+            class="buttonSpan" (click)="pressKey('+')">+</span></div>
+      <div class="buttonRow"><span class="buttonSpan operator" (click)="pressKey('=')">=</span></div>
+      <div class="buttonRow"><span class="buttonSpan operator" (click)="clearHistory()">Clear History</span></div>
+   </div>
+   <div class="previousCalculations" id="historyDiv"></div>
 </div>

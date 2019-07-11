@@ -6,6 +6,21 @@
     
 }
 
+.previousCalculations{
+    background-color:white;
+    color:darkgray;
+    text-align: right;
+    width:20%;
+    min-width: 200px;
+    margin:0 auto;
+}
+
+#historyDiv .historyDivEntry div{
+    cursor: pointer;
+    background-color: red;
+    color:blue;
+}
+
 .buttonSpan{
     background-color: black;
     color:lightblue;
